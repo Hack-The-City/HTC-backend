@@ -1,0 +1,12 @@
+<h1>Announcements</h1>
+
+<% @announcements.each do |announcement| %>
+  <h3>
+    <a href="<%= announcement_path(announcement) %>">
+      <%= announcement.title %>
+    </a>
+  </h3>
+
+  <p><%= announcement.body %></p>
+  <hr>
+<% end %>
